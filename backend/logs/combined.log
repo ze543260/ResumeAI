@@ -286,3 +286,370 @@
 {"level":"info","message":"SIGINT received","service":"resume-analyzer-api","timestamp":"2025-08-06T20:58:03.226Z"}
 {"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:03:09.346Z"}
 {"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:03:09.378Z"}
+{"level":"info","message":"POST /api/resume/generate-improved-pdf - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:05:13.731Z"}
+{"level":"info","message":"Generating improved PDF resume","service":"resume-analyzer-api","timestamp":"2025-08-06T21:05:13.736Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:05:13.737Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:05:13.738Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:05:14.966Z"}
+{"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:05:18.855Z"}
+{"level":"info","message":"SIGINT received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:12:13.976Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:12:45.559Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:12:45.571Z"}
+{"level":"info","message":"SIGINT received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:12:56.099Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:12:59.866Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:12:59.881Z"}
+{"level":"info","message":"POST /api/resume/generate-improved-pdf - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:07.286Z"}
+{"level":"info","message":"Generating improved PDF resume","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:07.289Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:07.289Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:07.290Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:08.488Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:08.489Z"}
+{"level":"info","message":"AI-generated improved content received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:18.600Z"}
+{"level":"error","message":"Error parsing AI response:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:18.603Z"}
+{"level":"error","message":"PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:18.648Z"}
+{"level":"error","message":"Improved PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:18.649Z"}
+{"level":"info","message":"SIGINT received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:24.189Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:27.456Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:27.469Z"}
+{"level":"info","message":"POST /api/resume/upload-analyze - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.837Z"}
+{"level":"info","message":"Starting upload and analyze for file: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.854Z"}
+{"level":"info","message":"Processing uploaded file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.855Z"}
+{"level":"info","message":"File uploaded successfully: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.858Z"}
+{"level":"info","message":"Extracting text from file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.859Z"}
+{"level":"info","message":"Extracting text from file: CurrÃ­culo 1 (1).pdf, size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.860Z"}
+{"level":"info","message":"File extension: .pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.861Z"}
+{"level":"info","message":"Processing PDF file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.862Z"}
+{"level":"info","message":"PDF buffer size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:42.870Z"}
+{"level":"info","message":"PDF pages: 2, info: {\"PDFFormatVersion\":\"1.7\",\"IsAcroFormPresent\":false,\"IsXFAPresent\":false,\"Author\":\"José Vitor Gomes Nascimento\",\"Creator\":\"Microsoft Word\",\"CreationDate\":\"D:20250603075555-07'00'\",\"ModDate\":\"D:20250603075555-07'00'\"}","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.283Z"}
+{"level":"info","message":"Successfully extracted 1649 characters","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.286Z"}
+{"level":"info","message":"Text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.286Z"}
+{"level":"info","message":"Text extracted successfully, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.287Z"}
+{"level":"info","message":"Validating resume content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.288Z"}
+{"level":"info","message":"Validating resume text, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.288Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.288Z"}
+{"level":"info","message":"Word count: 222","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.289Z"}
+{"level":"info","message":"Found resume keywords: experience, education, skills, work, project","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.289Z"}
+{"level":"info","message":"Resume validation successful","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.290Z"}
+{"level":"info","message":"Starting resume analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.290Z"}
+{"level":"info","message":"Starting resume analysis with AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:43.290Z"}
+{"level":"info","message":"Resume analysis completed successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:50.776Z"}
+{"level":"info","message":"POST /api/resume/generate-improved-pdf - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:56.129Z"}
+{"level":"info","message":"Generating improved PDF resume","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:56.131Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:56.131Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:56.131Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:56.953Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:15:56.954Z"}
+{"level":"info","message":"AI-generated improved content received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:16:06.718Z"}
+{"level":"info","message":"Parsing AI response for improved content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:16:06.719Z"}
+{"level":"warn","message":"AI response is not a string, using fallback","service":"resume-analyzer-api","timestamp":"2025-08-06T21:16:06.719Z"}
+{"level":"error","message":"PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:16:06.735Z"}
+{"level":"error","message":"Improved PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:16:06.735Z"}
+{"level":"info","message":"File deleted: C:\\Users\\josev\\OneDrive\\Documentos\\portifólio\\resume-analyzer-ai\\backend\\uploads\\Curr__culo_1__1__1754514942843-932667994.pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:16:50.808Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:17:47.008Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:17:47.020Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:18.241Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:18.257Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:24.588Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:24.590Z"}
+{"level":"error","message":"Error generating improved content:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:25.307Z"}
+{"level":"error","message":"PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:25.322Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:44.196Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:44.207Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:56.722Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:56.733Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:19:10.413Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:19:10.415Z"}
+{"level":"error","message":"Error generating improved content:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:19:11.061Z"}
+{"level":"info","message":"Using smart fallback content due to AI error","service":"resume-analyzer-api","timestamp":"2025-08-06T21:19:11.061Z"}
+{"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:19:13.646Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:19:26.505Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:19:26.516Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:20:12.910Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:20:12.922Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:20:59.911Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:20:59.927Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:21:29.754Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:21:29.766Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:21:49.611Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:21:49.624Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:15.624Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:15.636Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:34.282Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:34.293Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:40.654Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:40.656Z"}
+{"level":"error","message":"Error generating improved content:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:41.982Z"}
+{"level":"info","message":"Using smart fallback content due to AI error","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:41.983Z"}
+{"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:44.390Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:23:43.129Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:23:43.142Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:24:34.150Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:24:34.178Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:24:56.519Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:24:56.532Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:25:26.956Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:25:26.970Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:20.975Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:20.988Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:26.585Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:26.597Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:50.203Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:50.223Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:56.073Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:56.081Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:56.082Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:56.083Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:56.083Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:56.085Z"}
+{"level":"info","message":"Generated mock improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:26:56.085Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:26.731Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:26.744Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:36.452Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:36.455Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:36.456Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:36.456Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:36.456Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:36.457Z"}
+{"level":"info","message":"Generated mock improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:27:36.457Z"}
+{"level":"info","message":"POST /api/resume/upload-analyze - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.159Z"}
+{"level":"info","message":"Starting upload and analyze for file: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.172Z"}
+{"level":"info","message":"Processing uploaded file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.173Z"}
+{"level":"info","message":"File uploaded successfully: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.174Z"}
+{"level":"info","message":"Extracting text from file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.175Z"}
+{"level":"info","message":"Extracting text from file: CurrÃ­culo 1 (1).pdf, size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.175Z"}
+{"level":"info","message":"File extension: .pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.176Z"}
+{"level":"info","message":"Processing PDF file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.176Z"}
+{"level":"info","message":"PDF buffer size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.182Z"}
+{"level":"info","message":"PDF pages: 2, info: {\"PDFFormatVersion\":\"1.7\",\"IsAcroFormPresent\":false,\"IsXFAPresent\":false,\"Author\":\"José Vitor Gomes Nascimento\",\"Creator\":\"Microsoft Word\",\"CreationDate\":\"D:20250603075555-07'00'\",\"ModDate\":\"D:20250603075555-07'00'\"}","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.619Z"}
+{"level":"info","message":"Successfully extracted 1649 characters","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.620Z"}
+{"level":"info","message":"Text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.621Z"}
+{"level":"info","message":"Text extracted successfully, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.621Z"}
+{"level":"info","message":"Validating resume content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.622Z"}
+{"level":"info","message":"Validating resume text, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.623Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.623Z"}
+{"level":"info","message":"Word count: 222","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.624Z"}
+{"level":"info","message":"Found resume keywords: experience, education, skills, work, project","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.624Z"}
+{"level":"info","message":"Resume validation successful","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.625Z"}
+{"level":"info","message":"Starting resume analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.625Z"}
+{"level":"info","message":"Starting resume analysis with AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:38.626Z"}
+{"level":"info","message":"Resume analysis completed successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:47.139Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:52.438Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:52.441Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:52.441Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:52.441Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:52.442Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:52.442Z"}
+{"level":"info","message":"Generated mock improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:28:52.442Z"}
+{"level":"info","message":"File deleted: C:\\Users\\josev\\OneDrive\\Documentos\\portifólio\\resume-analyzer-ai\\backend\\uploads\\Curr__culo_1__1__1754515718166-91431036.pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:29:47.150Z"}
+{"level":"info","message":"SIGINT received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:36.321Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:39.284Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:39.297Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:47.674Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:47.678Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:47.678Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:47.679Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:47.679Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:47.680Z"}
+{"level":"info","message":"Generated mock improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:47.681Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:49.804Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:49.810Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:49.810Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:49.811Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:49.811Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:49.812Z"}
+{"level":"info","message":"Generated mock improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:49.812Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:51.045Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:51.046Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:51.046Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:51.047Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:51.047Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:51.047Z"}
+{"level":"info","message":"Generated mock improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:30:51.047Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:27.309Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:27.311Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:27.311Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:27.312Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:27.313Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:27.313Z"}
+{"level":"info","message":"Generated mock improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:27.313Z"}
+{"level":"info","message":"SIGINT received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:31.982Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:38.222Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:38.235Z"}
+{"level":"info","message":"POST /api/resume/upload-analyze - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:48.966Z"}
+{"level":"info","message":"Starting upload and analyze for file: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:48.983Z"}
+{"level":"info","message":"Processing uploaded file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:48.984Z"}
+{"level":"info","message":"File uploaded successfully: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:48.985Z"}
+{"level":"info","message":"Extracting text from file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:48.986Z"}
+{"level":"info","message":"Extracting text from file: CurrÃ­culo 1 (1).pdf, size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:48.989Z"}
+{"level":"info","message":"File extension: .pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:48.990Z"}
+{"level":"info","message":"Processing PDF file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:48.992Z"}
+{"level":"info","message":"PDF buffer size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.005Z"}
+{"level":"info","message":"PDF pages: 2, info: {\"PDFFormatVersion\":\"1.7\",\"IsAcroFormPresent\":false,\"IsXFAPresent\":false,\"Author\":\"José Vitor Gomes Nascimento\",\"Creator\":\"Microsoft Word\",\"CreationDate\":\"D:20250603075555-07'00'\",\"ModDate\":\"D:20250603075555-07'00'\"}","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.414Z"}
+{"level":"info","message":"Successfully extracted 1649 characters","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.415Z"}
+{"level":"info","message":"Text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.415Z"}
+{"level":"info","message":"Text extracted successfully, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.416Z"}
+{"level":"info","message":"Validating resume content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.416Z"}
+{"level":"info","message":"Validating resume text, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.417Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.417Z"}
+{"level":"info","message":"Word count: 222","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.418Z"}
+{"level":"info","message":"Found resume keywords: experience, education, skills, work, project","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.419Z"}
+{"level":"info","message":"Resume validation successful","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.419Z"}
+{"level":"info","message":"Starting resume analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.420Z"}
+{"level":"info","message":"Starting resume analysis with AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:49.421Z"}
+{"level":"info","message":"Resume analysis completed successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:33:56.068Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:04.157Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:04.161Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:04.162Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:04.163Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:04.164Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:04.165Z"}
+{"level":"info","message":"Generated AI improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:09.936Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:44.733Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:34:44.746Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:37.418Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:37.430Z"}
+{"level":"info","message":"POST /api/resume/generate-improved-pdf - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:47.369Z"}
+{"level":"info","message":"Generating improved PDF resume","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:47.373Z"}
+{"level":"info","message":"Analysis data keys: overallScore,atsScore,strengths,weaknesses,areasForImprovement","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:47.373Z"}
+{"level":"info","message":"Resume text length: 403","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:47.374Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:48.539Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:48.541Z"}
+{"level":"info","message":"AI-generated improved content received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:53.985Z"}
+{"level":"info","message":"Parsing AI response for improved content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:53.985Z"}
+{"level":"warn","message":"AI response is not a string, using fallback","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:53.986Z"}
+{"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:35:56.663Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:37:08.182Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:37:08.194Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:37:25.179Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:37:25.192Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:38:04.744Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:38:04.756Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:38:50.668Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:38:50.680Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:39:46.573Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:39:46.591Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:39:54.773Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:39:54.787Z"}
+{"level":"info","message":"POST /api/resume/generate-improved-pdf - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:34.867Z"}
+{"level":"info","message":"Generating improved PDF resume","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:34.871Z"}
+{"level":"info","message":"Analysis data keys: overallScore,atsScore,strengths,weaknesses,areasForImprovement","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:34.872Z"}
+{"level":"info","message":"Resume text length: 179","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:34.873Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:36.055Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:36.056Z"}
+{"level":"info","message":"POST /api/resume/generate-improved-pdf - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:40.658Z"}
+{"level":"info","message":"Generating improved PDF resume","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:40.660Z"}
+{"level":"info","message":"Analysis data keys: overallScore,atsScore,strengths,weaknesses,areasForImprovement","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:40.660Z"}
+{"level":"info","message":"Resume text length: 179","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:40.660Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:40.660Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:40.660Z"}
+{"level":"info","message":"AI-generated improved content received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:41.864Z"}
+{"level":"info","message":"Parsing AI response for improved content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:41.866Z"}
+{"level":"warn","message":"AI response is not a string, using fallback","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:41.866Z"}
+{"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:44.675Z"}
+{"level":"info","message":"AI-generated improved content received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:45.644Z"}
+{"level":"info","message":"Parsing AI response for improved content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:45.645Z"}
+{"level":"warn","message":"AI response is not a string, using fallback","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:45.645Z"}
+{"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:40:47.998Z"}
+{"level":"info","message":"POST /api/resume/upload-analyze - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.540Z"}
+{"level":"info","message":"Starting upload and analyze for file: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.555Z"}
+{"level":"info","message":"Processing uploaded file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.556Z"}
+{"level":"info","message":"File uploaded successfully: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.556Z"}
+{"level":"info","message":"Extracting text from file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.557Z"}
+{"level":"info","message":"Extracting text from file: CurrÃ­culo 1 (1).pdf, size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.557Z"}
+{"level":"info","message":"File extension: .pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.558Z"}
+{"level":"info","message":"Processing PDF file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.558Z"}
+{"level":"info","message":"PDF buffer size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:37.568Z"}
+{"level":"info","message":"PDF pages: 2, info: {\"PDFFormatVersion\":\"1.7\",\"IsAcroFormPresent\":false,\"IsXFAPresent\":false,\"Author\":\"José Vitor Gomes Nascimento\",\"Creator\":\"Microsoft Word\",\"CreationDate\":\"D:20250603075555-07'00'\",\"ModDate\":\"D:20250603075555-07'00'\"}","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.028Z"}
+{"level":"info","message":"Successfully extracted 1649 characters","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.029Z"}
+{"level":"info","message":"Text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.029Z"}
+{"level":"info","message":"Text extracted successfully, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.030Z"}
+{"level":"info","message":"Validating resume content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.031Z"}
+{"level":"info","message":"Validating resume text, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.031Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.032Z"}
+{"level":"info","message":"Word count: 222","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.032Z"}
+{"level":"info","message":"Found resume keywords: experience, education, skills, work, project","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.033Z"}
+{"level":"info","message":"Resume validation successful","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.033Z"}
+{"level":"info","message":"Starting resume analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.034Z"}
+{"level":"info","message":"Starting resume analysis with AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:38.034Z"}
+{"level":"info","message":"Resume analysis completed successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:45.158Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:48.900Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:48.903Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:48.906Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:48.908Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:48.910Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:48.911Z"}
+{"level":"info","message":"Generated AI improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:41:54.116Z"}
+{"level":"info","message":"SIGINT received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:26.811Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:29.873Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:29.886Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:32.583Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:32.586Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:32.586Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:32.587Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:32.587Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:32.588Z"}
+{"level":"info","message":"Generated AI improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:42:39.054Z"}
+{"level":"info","message":"POST /api/resume/generate-improvements - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:17.013Z"}
+{"level":"info","message":"Generating improvements for resume, type: general","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:17.017Z"}
+{"level":"info","message":"Analysis data keys: rawAnalysis,overallScore,strengths,weaknesses,suggestions,keywords,formatting,atsScore,jobMatch,missingSkills,customization,analyzedAt,hasJobComparison","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:17.017Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:17.018Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:17.018Z"}
+{"level":"info","message":"Generating general improvements based on analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:17.018Z"}
+{"level":"info","message":"Generated AI improvements successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:23.496Z"}
+{"level":"info","message":"POST /api/resume/upload-analyze - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.432Z"}
+{"level":"info","message":"Starting upload and analyze for file: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.444Z"}
+{"level":"info","message":"Processing uploaded file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.444Z"}
+{"level":"info","message":"File uploaded successfully: CurrÃ­culo 1 (1).pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.444Z"}
+{"level":"info","message":"Extracting text from file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.445Z"}
+{"level":"info","message":"Extracting text from file: CurrÃ­culo 1 (1).pdf, size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.445Z"}
+{"level":"info","message":"File extension: .pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.445Z"}
+{"level":"info","message":"Processing PDF file","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.445Z"}
+{"level":"info","message":"PDF buffer size: 169691 bytes","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.447Z"}
+{"level":"info","message":"PDF pages: 2, info: {\"PDFFormatVersion\":\"1.7\",\"IsAcroFormPresent\":false,\"IsXFAPresent\":false,\"Author\":\"José Vitor Gomes Nascimento\",\"Creator\":\"Microsoft Word\",\"CreationDate\":\"D:20250603075555-07'00'\",\"ModDate\":\"D:20250603075555-07'00'\"}","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.792Z"}
+{"level":"info","message":"Successfully extracted 1649 characters","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.793Z"}
+{"level":"info","message":"Text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.794Z"}
+{"level":"info","message":"Text extracted successfully, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.794Z"}
+{"level":"info","message":"Validating resume content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.795Z"}
+{"level":"info","message":"Validating resume text, length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.796Z"}
+{"level":"info","message":"Resume text preview: \n\nJosé Vitor \nGomes \nNascimento \nRua Joaquim Carvalho de Oliveira,  \nn°47, Vista Alegre \n(35) 9-9813-0778 \nJose.gomes@alunos.ifsuldeminas.edu.br \nhttps://www.linkedin.com/in/jos%C3%A9-\nvitor-gomes-nas...","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.796Z"}
+{"level":"info","message":"Word count: 222","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.797Z"}
+{"level":"info","message":"Found resume keywords: experience, education, skills, work, project","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.798Z"}
+{"level":"info","message":"Resume validation successful","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.798Z"}
+{"level":"info","message":"Starting resume analysis","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.799Z"}
+{"level":"info","message":"Starting resume analysis with AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:42.799Z"}
+{"level":"info","message":"Resume analysis completed successfully","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:49.377Z"}
+{"level":"info","message":"POST /api/resume/generate-improved-pdf - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:58.380Z"}
+{"level":"info","message":"Generating improved PDF resume","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:58.382Z"}
+{"level":"info","message":"Analysis data keys: overallScore,atsScore,strengths,weaknesses,suggestions,keywords,formatting,areasForImprovement","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:58.382Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:58.383Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:59.503Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:45:59.505Z"}
+{"level":"info","message":"AI-generated improved content received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:46:06.485Z"}
+{"level":"info","message":"Parsing AI response for improved content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:46:06.485Z"}
+{"level":"warn","message":"AI response is not a string, using fallback","service":"resume-analyzer-api","timestamp":"2025-08-06T21:46:06.486Z"}
+{"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:46:09.034Z"}
+{"level":"info","message":"File deleted: C:\\Users\\josev\\OneDrive\\Documentos\\portifólio\\resume-analyzer-ai\\backend\\uploads\\Curr__culo_1__1__1754516742438-689702547.pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:46:49.392Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:47:46.640Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:47:46.656Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:48:24.979Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:48:25.000Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:48:35.213Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:48:35.225Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:48:48.234Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:48:48.249Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:49:05.151Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:49:05.166Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:08.680Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:08.695Z"}
+{"level":"info","message":"POST /api/resume/generate-improved-pdf - ::1","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:14.256Z"}
+{"level":"info","message":"Generating improved PDF resume","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:14.265Z"}
+{"level":"info","message":"Analysis data keys: overallScore,atsScore,strengths,weaknesses,suggestions,keywords,formatting,areasForImprovement","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:14.266Z"}
+{"level":"info","message":"Resume text length: 1649","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:14.267Z"}
+{"level":"info","message":"Starting improved resume PDF generation","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:15.484Z"}
+{"level":"info","message":"Generating improved content using AI","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:15.485Z"}
+{"level":"info","message":"AI-generated improved content received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:20.564Z"}
+{"level":"info","message":"Parsing AI response for improved content","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:20.568Z"}
+{"level":"info","message":"AI Response preview:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:20.569Z"}
+{"level":"info","message":"Successfully parsed AI response sections","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:20.571Z"}
+{"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:23.284Z"}
+{"level":"info","message":"SIGINT received","service":"resume-analyzer-api","timestamp":"2025-08-06T21:50:24.309Z"}

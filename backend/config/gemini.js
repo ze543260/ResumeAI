@@ -12,7 +12,7 @@ const analyzeResumeWithAI = async (resumeText, jobDescription = "") => {
     );
 
     const model = genAI.getGenerativeModel({
-      model: process.env.GEMINI_MODEL || "gemini-2.0-flash-exp",
+      model: process.env.GEMINI_MODEL || "gemini-1.5-flash",
       generationConfig: {
         temperature: 0.3,
         maxOutputTokens: 3000,
@@ -120,7 +120,7 @@ const generateImprovements = async (
     );
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash-exp",
+      model: process.env.GEMINI_MODEL || "gemini-1.5-flash",
       generationConfig: {
         temperature: 0.7,
         topK: 40,
@@ -300,8 +300,93 @@ const parseListItems = (section) => {
   return items.length > 0 ? items.join("\n• ") : section.trim();
 };
 
+const generateImprovedResumeContent = async (
+  analysisData,
+  originalResumeText
+) => {
+  try {
+    console.log("🔍 Generating improved resume content for PDF");
+
+    const model = genAI.getGenerativeModel({
+      model: process.env.GEMINI_MODEL || "gemini-1.5-flash",
+      generationConfig: {
+        temperature: 0.4,
+        maxOutputTokens: 4000,
+      },
+    });
+
+    // Extract key data from analysis
+    const currentScore = analysisData?.overallScore || "não informado";
+    const weaknesses = Array.isArray(analysisData?.weaknesses)
+      ? analysisData.weaknesses.join(", ")
+      : analysisData?.weaknesses || "formatação e estrutura";
+
+    const prompt = `Você é um especialista em recursos humanos com 15 anos de experiência. Sua tarefa é reescrever completamente o currículo abaixo para torná-lo mais profissional, impactante e otimizado para ATS.
+
+CURRÍCULO ORIGINAL:
+${originalResumeText}
+
+ANÁLISE ATUAL:
+- Score: ${currentScore}/100
+- Pontos fracos identificados: ${weaknesses}
+
+INSTRUÇÕES:
+1. Reescreva o currículo de forma profissional e impactante
+2. Mantenha APENAS as informações reais que você conseguir extrair do texto original
+3. Melhore a linguagem tornando-a mais objetiva e orientada a resultados
+4. Adicione verbos de ação e quantifique conquistas quando possível
+5. Organize as informações de forma lógica e ATS-friendly
+
+FORMATO DE RESPOSTA OBRIGATÓRIO:
+[NOME_COMPLETO]
+Nome completo da pessoa (se mencionado no original)
+
+[CONTATO]
+Informações de contato encontradas no original
+
+[RESUMO_PROFISSIONAL]
+Um resumo profissional impactante baseado na experiência real da pessoa (2-3 linhas)
+
+[EXPERIENCIA_PROFISSIONAL]
+Para cada experiência encontrada no original:
+• Cargo | Empresa | Período
+• Conquista/responsabilidade com números/resultados
+• Conquista/responsabilidade com números/resultados
+
+[FORMACAO]
+• Curso | Instituição | Ano (se mencionado)
+• Certificações relevantes (se mencionadas)
+
+[COMPETENCIAS]
+Habilidades técnicas e comportamentais identificadas no texto original
+
+[CONQUISTAS]
+Principais realizações e resultados mensuráveis (baseados no conteúdo original)
+
+IMPORTANTE: Use APENAS informações que conseguir extrair do currículo original. Não invente dados!`;
+
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const responseText = response.text();
+
+    console.log("✅ AI-generated improved resume content received");
+    console.log("📝 Content preview:", responseText.substring(0, 300) + "...");
+
+    return responseText;
+  } catch (error) {
+    console.error(
+      "❌ Error generating improved resume content:",
+      error.message
+    );
+    throw new Error(
+      `Failed to generate improved resume content: ${error.message}`
+    );
+  }
+};
+
 module.exports = {
   analyzeResumeWithAI,
   generateImprovements,
+  generateImprovedResumeContent,
   genAI,
 };

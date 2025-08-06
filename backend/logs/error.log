@@ -16,3 +16,12 @@
 {"level":"error","message":"Improvement generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T20:55:42.244Z"}
 {"level":"error","message":"Improvement generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T20:56:12.477Z"}
 {"level":"error","message":"Improvement generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T20:56:12.477Z"}
+{"level":"error","message":"Error parsing AI response:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:18.603Z"}
+{"level":"error","message":"PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:18.648Z"}
+{"level":"error","message":"Improved PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:13:18.649Z"}
+{"level":"error","message":"PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:16:06.735Z"}
+{"level":"error","message":"Improved PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:16:06.735Z"}
+{"level":"error","message":"Error generating improved content:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:25.307Z"}
+{"level":"error","message":"PDF generation error:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:18:25.322Z"}
+{"level":"error","message":"Error generating improved content:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:19:11.061Z"}
+{"level":"error","message":"Error generating improved content:","service":"resume-analyzer-api","timestamp":"2025-08-06T21:22:41.982Z"}

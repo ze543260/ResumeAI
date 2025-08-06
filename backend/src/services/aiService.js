@@ -204,7 +204,24 @@ class AIService {
         `Generating ${improvementType} improvements based on analysis`
       );
 
-      // Dados mock para testar inicialmente
+      // Usar a IA real em vez de dados mock
+      const { generateImprovements } = require("../../config/gemini");
+
+      const aiImprovements = await generateImprovements(
+        analysisData,
+        resumeText,
+        improvementType
+      );
+
+      logger.info("Generated AI improvements successfully");
+
+      return aiImprovements;
+    } catch (error) {
+      logger.error("Improvement generation error:", error.message);
+
+      // Fallback para dados mock se a IA falhar
+      logger.info("Using mock improvements as fallback");
+
       const mockImprovements = {
         priorityImprovements:
           "• Adicionar mais detalhes quantificáveis nas experiências\n• Melhorar formatação visual para maior legibilidade\n• Incluir palavras-chave específicas da sua área",
@@ -223,12 +240,7 @@ class AIService {
         generatedAt: new Date().toISOString(),
       };
 
-      logger.info("Generated mock improvements successfully");
-
       return mockImprovements;
-    } catch (error) {
-      logger.error("Improvement generation error:", error.message);
-      throw new Error(`Failed to generate improvements: ${error.message}`);
     }
   }
 }

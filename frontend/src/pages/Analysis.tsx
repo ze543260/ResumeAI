@@ -101,12 +101,35 @@ const Analysis: React.FC = () => {
       setGeneratingPdf(true);
 
       console.log("🔍 Generating improved PDF...");
+      console.log("📊 Full analysis object:", analysis);
+      console.log("📊 Analysis.analysis:", analysis.analysis);
+      console.log("📊 Analysis.metadata:", analysis.metadata);
+
+      // Use actual analysis data without fallbacks - force AI usage
+      const analysisData = {
+        overallScore: analysis.analysis?.overallScore,
+        atsScore: analysis.analysis?.atsScore,
+        strengths: analysis.analysis?.strengths || [],
+        weaknesses: analysis.analysis?.weaknesses || [],
+        suggestions: analysis.analysis?.suggestions || "",
+        keywords: analysis.analysis?.keywords || "",
+        formatting: analysis.analysis?.formatting || "",
+        areasForImprovement: analysis.analysis?.weaknesses || "",
+      };
+
+      console.log("📊 Processed analysis data:", analysisData);
+      console.log(
+        "📄 Resume text length:",
+        analysis.metadata?.resumeText?.length || 0
+      );
 
       const pdfBlob = await apiService.generateImprovedPdf(
-        analysis.analysis,
+        analysisData,
         analysis.metadata?.resumeText ||
           "Sample resume text for improvement generation"
       );
+
+      console.log("✅ PDF blob received, size:", pdfBlob.size);
 
       // Criar download do PDF
       const url = window.URL.createObjectURL(pdfBlob);
@@ -119,9 +142,19 @@ const Analysis: React.FC = () => {
       window.URL.revokeObjectURL(url);
 
       console.log("✅ PDF generated and downloaded successfully");
-    } catch (error) {
-      console.error("Error generating improved PDF:", error);
-      alert("Erro ao gerar PDF melhorado. Tente novamente.");
+    } catch (error: unknown) {
+      const err = error as Error & {
+        response?: { status?: number; data?: unknown };
+      };
+      console.error("❌ Error generating improved PDF:", error);
+      console.error("❌ Error details:", {
+        message: err?.message || "Unknown error",
+        status: err?.response?.status,
+        data: err?.response?.data,
+      });
+      alert(
+        "Erro ao gerar PDF melhorado. Verifique o console para mais detalhes."
+      );
     } finally {
       setGeneratingPdf(false);
     }

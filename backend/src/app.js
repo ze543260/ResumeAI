@@ -30,7 +30,14 @@ app.use("/api/", limiter);
 // CORS configuration
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:5173",
+    origin: [
+      "http://localhost:5173", // Frontend React dev server
+      "http://127.0.0.1:5173", // Frontend React dev server (IP)
+      "http://localhost:3000", // Alternative frontend port
+      "http://127.0.0.1:3000", // Alternative frontend port (IP)
+      "http://127.0.0.1:5500", // Live Server para testes
+      "http://localhost:5500", // Live Server para testes
+    ],
     credentials: true,
   })
 );
