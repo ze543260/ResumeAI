@@ -231,6 +231,8 @@ IMPORTANTE: Use APENAS informações que conseguir extrair do currículo origina
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Currículo Melhorado - IA</title>
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+            
             * {
                 margin: 0;
                 padding: 0;
@@ -238,140 +240,327 @@ IMPORTANTE: Use APENAS informações que conseguir extrair do currículo origina
             }
             
             body {
-                font-family: 'Georgia', 'Times New Roman', serif;
-                line-height: 1.6;
-                color: #333;
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                line-height: 1.5;
+                color: #1a202c;
                 background: white;
-                font-size: 11pt;
+                font-size: 10.5pt;
+                letter-spacing: -0.01em;
+                -webkit-font-smoothing: antialiased;
             }
             
             .container {
                 max-width: 800px;
                 margin: 0 auto;
-                padding: 30px;
+                padding: 25px 35px;
+                min-height: 100vh;
+                background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
             }
             
             .header {
-                text-align: center;
-                border-bottom: 3px solid #2c5282;
-                padding-bottom: 20px;
-                margin-bottom: 30px;
+                position: relative;
+                background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+                color: white;
+                padding: 35px 30px 25px;
+                margin: -25px -35px 35px -35px;
+                border-radius: 0 0 20px 20px;
+                box-shadow: 0 10px 25px rgba(30, 58, 138, 0.15);
+                overflow: hidden;
+            }
+            
+            .header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 200px;
+                height: 200px;
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 50%;
+                transform: translate(50%, -50%);
+            }
+            
+            .header::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 150px;
+                height: 150px;
+                background: rgba(255, 255, 255, 0.03);
+                border-radius: 50%;
+                transform: translate(-30%, 30%);
             }
             
             .name {
-                font-size: 28px;
-                font-weight: bold;
-                color: #2c5282;
-                margin-bottom: 10px;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 8px;
+                position: relative;
+                z-index: 2;
+                letter-spacing: -0.02em;
             }
             
             .contact-info {
-                font-size: 12px;
-                color: #666;
-                line-height: 1.4;
+                font-size: 11px;
+                opacity: 0.95;
+                line-height: 1.6;
+                position: relative;
+                z-index: 2;
+                font-weight: 400;
             }
             
             .section {
-                margin-bottom: 25px;
+                margin-bottom: 30px;
+                position: relative;
             }
             
             .section-title {
-                font-size: 16px;
-                font-weight: bold;
-                color: #2c5282;
-                border-bottom: 1px solid #2c5282;
-                padding-bottom: 5px;
-                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #1e40af;
+                margin-bottom: 18px;
+                position: relative;
                 text-transform: uppercase;
-                letter-spacing: 1px;
+                letter-spacing: 0.5px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
             }
             
-            .experience-item, .education-item {
-                margin-bottom: 15px;
-                padding-left: 10px;
-                border-left: 2px solid #e2e8f0;
+            .section-title::before {
+                content: '';
+                width: 4px;
+                height: 20px;
+                background: linear-gradient(135deg, #1e40af, #3b82f6);
+                border-radius: 2px;
+                flex-shrink: 0;
             }
             
-            .job-title {
-                font-weight: bold;
-                color: #2c5282;
+            .section-title::after {
+                content: '';
+                flex: 1;
+                height: 1px;
+                background: linear-gradient(90deg, #e5e7eb 0%, transparent 100%);
+                margin-left: 10px;
+            }
+            
+            .section-content {
+                background: rgba(248, 250, 252, 0.6);
+                padding: 20px;
+                border-radius: 12px;
+                border: 1px solid #e2e8f0;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            }
+            
+            .experience-item, .education-item, .achievement-item {
+                margin-bottom: 20px;
+                padding: 18px;
+                background: white;
+                border-radius: 10px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+                transition: all 0.3s ease;
+                position: relative;
+            }
+            
+            .experience-item:hover, .education-item:hover, .achievement-item:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            }
+            
+            .job-title, .degree-title {
+                font-weight: 600;
+                color: #1e40af;
                 font-size: 13px;
+                margin-bottom: 4px;
+                letter-spacing: -0.01em;
             }
             
-            .company-name {
-                font-style: italic;
-                color: #4a5568;
-                margin-bottom: 5px;
+            .company-name, .institution-name {
+                font-weight: 500;
+                color: #374151;
+                margin-bottom: 6px;
+                font-size: 11px;
             }
             
             .date-range {
-                color: #666;
-                font-size: 10px;
-                margin-bottom: 8px;
+                color: #6b7280;
+                font-size: 9px;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 10px;
+                display: inline-block;
+                background: #f3f4f6;
+                padding: 3px 8px;
+                border-radius: 12px;
             }
             
             .achievements {
-                margin-top: 8px;
+                margin-top: 12px;
             }
             
             .achievements li {
-                margin-bottom: 4px;
+                margin-bottom: 6px;
                 list-style-type: none;
                 position: relative;
-                padding-left: 15px;
+                padding-left: 18px;
+                font-size: 10px;
+                line-height: 1.5;
+                color: #4b5563;
             }
             
             .achievements li:before {
-                content: "▶";
-                color: #2c5282;
+                content: "●";
+                color: #3b82f6;
                 position: absolute;
                 left: 0;
-                font-size: 8px;
-            }
-            
-            .skills-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-                margin-top: 10px;
-            }
-            
-            .skill-category {
-                padding: 10px;
-                background: #f7fafc;
-                border-radius: 5px;
-                border-left: 3px solid #2c5282;
-            }
-            
-            .skill-category h4 {
-                color: #2c5282;
-                margin-bottom: 5px;
                 font-size: 12px;
+                top: 0;
+                font-weight: bold;
+            }
+            
+            .skills-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+                margin-top: 15px;
+            }
+            
+            .skill-badge {
+                background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+                border: 1px solid #bfdbfe;
+                color: #1e40af;
+                padding: 8px 12px;
+                border-radius: 20px;
+                font-size: 10px;
+                font-weight: 500;
+                text-align: center;
+                display: inline-block;
+                margin: 3px;
+                box-shadow: 0 1px 3px rgba(59, 130, 246, 0.1);
             }
             
             .ai-improvement-note {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
                 color: white;
-                padding: 15px;
-                border-radius: 8px;
-                margin-bottom: 20px;
+                padding: 20px 25px;
+                border-radius: 15px;
+                margin: -25px -35px 35px -35px;
                 text-align: center;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+            }
+            
+            .ai-improvement-note::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuMSIvPgo8L3N2Zz4K') repeat;
+                opacity: 0.1;
+                z-index: 0;
+            }
+            
+            .ai-improvement-note > * {
+                position: relative;
+                z-index: 1;
+            }
+            
+            .ai-title {
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
             }
             
             .improvement-note {
                 font-size: 10px;
-                opacity: 0.9;
+                opacity: 0.95;
+                line-height: 1.5;
+                font-weight: 400;
+            }
+            
+            .summary-section {
+                background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                border: 1px solid #cbd5e1;
+                border-radius: 12px;
+                padding: 20px;
+                font-style: italic;
+                color: #475569;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .summary-section::before {
+                content: '"';
+                position: absolute;
+                top: -5px;
+                left: 15px;
+                font-size: 60px;
+                color: #cbd5e1;
+                line-height: 1;
+                font-family: serif;
+            }
+            
+            .two-column {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+                margin-top: 15px;
+            }
+            
+            @media print {
+                body {
+                    -webkit-print-color-adjust: exact !important;
+                    color-adjust: exact !important;
+                    print-color-adjust: exact !important;
+                }
+                
+                .container {
+                    padding: 20px;
+                    background: white;
+                    box-shadow: none;
+                }
+                
+                .section {
+                    page-break-inside: avoid;
+                    margin-bottom: 20px;
+                }
+                
+                .experience-item, .education-item, .achievement-item {
+                    page-break-inside: avoid;
+                    margin-bottom: 15px;
+                }
+            }
+            
+            .icon {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="ai-improvement-note">
-                <h3>✨ Currículo Melhorado por IA</h3>
+                <div class="ai-title">
+                    <span>✨</span>
+                    <span>Currículo Otimizado por Inteligência Artificial</span>
+                    <span>🚀</span>
+                </div>
                 <p class="improvement-note">
-                    Este currículo foi otimizado com base na análise inteligente, 
-                    melhorando a formatação, conteúdo e compatibilidade com ATS.<br>
-                    Score Original: ${originalScore} | Data: ${currentDate}
+                    Este documento foi aprimorado com tecnologia de IA avançada para maximizar sua compatibilidade 
+                    com sistemas ATS e aumentar suas chances de contratação.<br>
+                    <strong>Score Original:</strong> ${originalScore} | <strong>Data de Geração:</strong> ${currentDate}
                 </p>
             </div>
             
@@ -383,35 +572,56 @@ IMPORTANTE: Use APENAS informações que conseguir extrair do currículo origina
             </div>
 
             <div class="section">
-                <h2 class="section-title">Resumo Profissional</h2>
-                <p style="white-space: pre-line;">${resumoProfissional}</p>
+                <h2 class="section-title">
+                    <span>📋</span>
+                    Resumo Profissional
+                </h2>
+                <div class="summary-section">
+                    ${resumoProfissional}
+                </div>
             </div>
 
             <div class="section">
-                <h2 class="section-title">Experiência Profissional</h2>
-                <div class="experience-content" style="white-space: pre-line;">
+                <h2 class="section-title">
+                    <span>💼</span>
+                    Experiência Profissional
+                </h2>
+                <div class="section-content">
                     ${this.formatExperienceSection(experienciaProfissional)}
                 </div>
             </div>
 
-            <div class="section">
-                <h2 class="section-title">Formação Acadêmica</h2>
-                <div class="education-content" style="white-space: pre-line;">
-                    ${this.formatEducationSection(formacao)}
+            <div class="two-column">
+                <div class="section">
+                    <h2 class="section-title">
+                        <span>🎓</span>
+                        Formação Acadêmica
+                    </h2>
+                    <div class="section-content">
+                        ${this.formatEducationSection(formacao)}
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">
+                        <span>🏆</span>
+                        Principais Conquistas
+                    </h2>
+                    <div class="section-content">
+                        ${this.formatAchievementsSection(conquistas)}
+                    </div>
                 </div>
             </div>
 
             <div class="section">
-                <h2 class="section-title">Competências Técnicas</h2>
-                <div class="skills-content" style="white-space: pre-line;">
-                    ${competencias}
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Principais Conquistas</h2>
-                <div class="achievements-content" style="white-space: pre-line;">
-                    ${this.formatAchievementsSection(conquistas)}
+                <h2 class="section-title">
+                    <span>⚡</span>
+                    Competências Técnicas
+                </h2>
+                <div class="section-content">
+                    <div class="skills-container">
+                        ${this.formatSkillsSection(competencias)}
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,23 +634,200 @@ IMPORTANTE: Use APENAS informações que conseguir extrair do currículo origina
 
   formatExperienceSection(experienceText) {
     if (!experienceText) {
-      return "• Experiência profissional será extraída do seu currículo original";
+      return `
+        <div class="experience-item">
+          <div class="job-title">Posição Profissional</div>
+          <div class="company-name">Nome da Empresa</div>
+          <div class="date-range">Período de Trabalho</div>
+          <ul class="achievements">
+            <li>Experiência profissional será extraída do seu currículo original</li>
+            <li>Principais responsabilidades e conquistas identificadas</li>
+          </ul>
+        </div>
+      `;
     }
-    return experienceText;
+
+    // Parse experience text into structured format
+    const experiences = this.parseExperienceText(experienceText);
+    return experiences
+      .map(
+        (exp) => `
+      <div class="experience-item">
+        <div class="job-title">${exp.title}</div>
+        <div class="company-name">${exp.company}</div>
+        <div class="date-range">${exp.period}</div>
+        <ul class="achievements">
+          ${exp.achievements
+            .map((achievement) => `<li>${achievement}</li>`)
+            .join("")}
+        </ul>
+      </div>
+    `
+      )
+      .join("");
   }
 
   formatEducationSection(educationText) {
     if (!educationText) {
-      return "• Formação acadêmica será extraída do seu currículo original";
+      return `
+        <div class="education-item">
+          <div class="degree-title">Curso/Graduação</div>
+          <div class="institution-name">Instituição de Ensino</div>
+          <div class="date-range">Ano de Conclusão</div>
+        </div>
+      `;
     }
-    return educationText;
+
+    // Parse education text into structured format
+    const educations = this.parseEducationText(educationText);
+    return educations
+      .map(
+        (edu) => `
+      <div class="education-item">
+        <div class="degree-title">${edu.degree}</div>
+        <div class="institution-name">${edu.institution}</div>
+        <div class="date-range">${edu.year}</div>
+        ${
+          edu.details
+            ? `<div class="achievements"><li>${edu.details}</li></div>`
+            : ""
+        }
+      </div>
+    `
+      )
+      .join("");
   }
 
   formatAchievementsSection(achievementsText) {
     if (!achievementsText) {
-      return "• Principais conquistas baseadas no conteúdo do seu currículo";
+      return `
+        <div class="achievement-item">
+          <ul class="achievements">
+            <li>Principais conquistas baseadas no conteúdo do seu currículo</li>
+            <li>Resultados mensuráveis e impacto profissional</li>
+          </ul>
+        </div>
+      `;
     }
-    return achievementsText;
+
+    // Parse achievements into bullet points
+    const achievements = this.parseAchievementsText(achievementsText);
+    return `
+      <div class="achievement-item">
+        <ul class="achievements">
+          ${achievements
+            .map((achievement) => `<li>${achievement}</li>`)
+            .join("")}
+        </ul>
+      </div>
+    `;
+  }
+
+  formatSkillsSection(skillsText) {
+    if (!skillsText) {
+      return `
+        <div class="skill-badge">Habilidades Técnicas</div>
+        <div class="skill-badge">Competências Comportamentais</div>
+      `;
+    }
+
+    // Parse skills and create badges
+    const skills = this.parseSkillsText(skillsText);
+    return skills
+      .map((skill) => `<div class="skill-badge">${skill}</div>`)
+      .join("");
+  }
+
+  // Helper methods to parse text content
+  parseExperienceText(text) {
+    const experiences = [];
+    const lines = text.split("\n").filter((line) => line.trim());
+
+    let currentExp = null;
+
+    for (const line of lines) {
+      if (line.includes("|") && !line.startsWith("•")) {
+        // This is likely a job title line
+        if (currentExp) experiences.push(currentExp);
+
+        const parts = line.split("|").map((p) => p.trim());
+        currentExp = {
+          title: parts[0] || "Posição",
+          company: parts[1] || "Empresa",
+          period: parts[2] || "Período",
+          achievements: [],
+        };
+      } else if (line.startsWith("•") && currentExp) {
+        // This is an achievement
+        currentExp.achievements.push(line.substring(1).trim());
+      }
+    }
+
+    if (currentExp) experiences.push(currentExp);
+
+    return experiences.length > 0
+      ? experiences
+      : [
+          {
+            title: "Experiência Profissional",
+            company: "Conforme currículo original",
+            period: "Período de trabalho",
+            achievements: [
+              "Responsabilidades e conquistas serão extraídas do currículo original",
+            ],
+          },
+        ];
+  }
+
+  parseEducationText(text) {
+    const educations = [];
+    const lines = text.split("\n").filter((line) => line.trim());
+
+    for (const line of lines) {
+      if (line.includes("|")) {
+        const parts = line
+          .replace("•", "")
+          .split("|")
+          .map((p) => p.trim());
+        educations.push({
+          degree: parts[0] || "Curso",
+          institution: parts[1] || "Instituição",
+          year: parts[2] || "Ano",
+        });
+      } else if (line.trim().startsWith("•")) {
+        educations.push({
+          degree: line.replace("•", "").trim(),
+          institution: "",
+          year: "",
+        });
+      }
+    }
+
+    return educations.length > 0
+      ? educations
+      : [
+          {
+            degree: "Formação Acadêmica",
+            institution: "Instituição de Ensino",
+            year: "Ano de Conclusão",
+          },
+        ];
+  }
+
+  parseAchievementsText(text) {
+    return text
+      .split("\n")
+      .filter((line) => line.trim())
+      .map((line) => line.replace(/^•\s*/, "").trim())
+      .filter((line) => line.length > 0);
+  }
+
+  parseSkillsText(text) {
+    // Split by common separators and clean up
+    return text
+      .split(/[,;\n]/)
+      .map((skill) => skill.replace(/^•\s*/, "").trim())
+      .filter((skill) => skill.length > 0);
   }
 
   async generatePdfFromHtml(htmlContent) {
@@ -450,27 +837,49 @@ IMPORTANTE: Use APENAS informações que conseguir extrair do currículo origina
         width: "210mm",
         height: "297mm",
         border: {
-          top: "10mm",
-          right: "10mm",
-          bottom: "10mm",
-          left: "10mm",
+          top: "12mm",
+          right: "12mm",
+          bottom: "12mm",
+          left: "12mm",
         },
         paginationOffset: 0,
         dpi: 300,
         type: "pdf",
         quality: "100",
-        timeout: 30000,
+        timeout: 45000,
+        phantomPath: undefined,
+        localUrlAccess: false,
+        httpHeaders: {
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        },
+        renderDelay: 1000,
+        zoomFactor: 1,
+        phantomArgs: [
+          "--ignore-ssl-errors=yes",
+          "--web-security=no",
+          "--ssl-protocol=any",
+          "--load-images=yes",
+        ],
+        childProcessOptions: {
+          env: {
+            OPENSSL_CONF: "/dev/null",
+          },
+        },
       };
 
       const file = {
         content: htmlContent,
       };
 
+      logger.info("Starting PDF generation with enhanced options");
       const pdfBuffer = await htmlPdf.generatePdf(file, options);
+      logger.info("PDF generated successfully with professional design");
+
       return pdfBuffer;
     } catch (error) {
       logger.error("HTML to PDF conversion error:", error.message);
-      throw new Error("Failed to convert HTML to PDF");
+      throw new Error(`Failed to convert HTML to PDF: ${error.message}`);
     }
   }
 }

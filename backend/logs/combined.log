@@ -714,3 +714,13 @@
 {"level":"info","message":"Successfully parsed AI response sections","service":"resume-analyzer-api","timestamp":"2025-08-06T21:52:50.639Z"}
 {"level":"info","message":"Successfully generated improved resume PDF","service":"resume-analyzer-api","timestamp":"2025-08-06T21:52:52.965Z"}
 {"level":"info","message":"File deleted: C:\\Users\\josev\\OneDrive\\Documentos\\portifólio\\resume-analyzer-ai\\backend\\uploads\\resume_improved_1754517059492_1754517129917-267393270.pdf","service":"resume-analyzer-api","timestamp":"2025-08-06T21:53:17.627Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:55:10.795Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:55:10.816Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:55:30.400Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:55:30.412Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:55:56.870Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:55:56.882Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:56:11.050Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:56:11.064Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"resume-analyzer-api","timestamp":"2025-08-06T21:58:03.589Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"resume-analyzer-api","timestamp":"2025-08-06T21:58:03.605Z"}
